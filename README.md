@@ -1,1 +1,0 @@
-# pwi-nicol.choque2026
