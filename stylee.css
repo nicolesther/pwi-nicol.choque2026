@@ -1,0 +1,125 @@
+/*Reset Basico*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Responsivo*/
+@media(max-width:600px){
+    .cardapio{
+        padding: 2px 10px; /*Espaço em telas pequenas*/
+        .cardapio h2{
+            font-size: 16px;
+        }
+        .cardapiop{
+            font-size: 12px;
+        }
+    }
+}
+/*Menu principal*/
+.menu{
+    display: flex;
+    justify-content: space-between; /*separa logo e menu*/
+    align-items: center;
+    background-color: rgb(81, 17, 141);
+    padding: 15px 30px;
+}
+/*Logo*/
+.logo{
+    color: rgb(222, 219, 225);
+    font-size: 24px;
+    font-weight: bold;
+}
+/*Lista*/
+.menu-links{
+    list-style: none;
+    display: flex;
+    gap: 25px /*espaço entre os itens*/
+}
+.menu-links a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.menu-links a:hover{
+    color: yellow;
+}
+/*Rodape*/
+/*barra vermelha*/
+.barra-alerta{
+    background-color: rgb(81, 17, 141);
+    color: #eee;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5f5;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+.footer-logo h2{ /*logo do rodape*/
+    color:  rgb(6, 3, 9);
+}
+.footer-link{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-link a{
+    text-decoration: none;
+    color: rgb(81, 17, 141);
+    font-size: 14px;
+}
+.footer-link a:hover{
+    color: #444;
+}
+/*redes sociais*/
+.footer-redes{
+    display: flex;
+    gap: 15px;
+}
+.footer-redes a{
+    text-decoration: none;
+    color: purple;
+    font-size: 14px;
+}
+.footer-redes a:hover{
+    color: #444;
+}
+.cardapio{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.bloco{
+    display: grid;
+    grid-template-columns: 1fr 1fr;/*divive em dua partes:texto=imagem*/
+    align-items: center;
+}
+.vermelho{
+    background-color: rgb(119, 26, 205);
+    color: white;
+}
+.bege{
+    background-color: rgb(199, 183, 215);
+}
+.texto{
+    padding: 40px;
+}
+.texto h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.texto p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.imagem{
+    width: 30px;
+    height: 300px;
+    object-fit: cover;
+}
