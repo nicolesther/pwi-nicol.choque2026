@@ -3,30 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Luce di Luna</title>
+    
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="sobre.html">sobre</a>
+    <header>
+     <nav class="menu">
+        <h1 class="logo"><em>Luce di Luna</em></h1>
+        <ul class="menu-links">
+<a href="index.html">Inicio</a>
+<a href="cardapio.html">Cardápio</a>
+<a href="nossaHistoria.html">Nossa História</a>
+<a href="localizacao.html">Localização</a>
+        </ul>
     </nav>
-    <p>Rua do Hipodromo nº3786</p>
-    <ol>
-        <li>Whatsapp</li>
-        <li>Instragram</li>
-        <li>tiktok</li>
-    </ol>
-    <p>Preencha o formulário e faça sua reserva</p>
-    <!--criar um formulario-->
-    <form>
-        <label>Nome</label><!--nome do campo-->
-        <input type="text"><br><!--crie uma caixa de texto-->
+    </header>
+    <section class="contato">
+        <h1>Agende sua reserva</h1>
+        <!--Formulário-->
+        <form id="formReserva">
+            <!--nome-->
+            <label>Nome</label>
+            <input type="text" id="nome" placeholder="Diogite seu nome" required>
 
-        <label>Telefone</label>
-        <input type="tel"><br>
-        <label>Mensagem</label>
-        <textarea>Escreva dia , horario, numero de pessoa e autor</textarea>
+            <!--email-->
+            <label>E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu email">
 
-    </form>
+            <!--whatsapp-->
+            <label>Whatsapp</label>
+            <input type="tel" id="Whatsapp" placeholder="Digite seu telefone">
+
+            <!--Data-->
+            <label>Data de reserva</label>
+            <input type="date" id="data">
+
+            <!--Horario-->
+            <label>Horário</label>
+            <input type="time" id="horario">
+
+            <!--observações-->
+            <label>Informações das reservas</label>
+            <textarea id="mensagem" placeholder="Exemplo: Nome João,Quantidade de pessoas: 4,Mesa proximo a janela"></textarea>
+            <!--botão-->
+            <button type="submit">Agendar Reserva</button>
+        </form>
+        <!--mensagem-->
+        <p id="resultado"></p>
+    </section>
+    <!--conecta com javascript-->
+    <script src="script.js"></script>
+    <footer><!--Rodapé-->
+            <!--Barra vermelha-->
+            <div class="barra-alerta">
+                <p>SE BEBER, NÃO DIRIJA!</p>
+            </div>
+            <!--Conteudo principal do rodape-->
+            <div class="footer-container">
+                <!--Logo-->
+                <div class="footer-logo">
+                    <h2><em>Luce di Luna</em></h2>
+                </div>
+                <!--Link do site-->
+                <div class="footer-link">
+                    <a href="28-04-06.html">Inicio</a>
+                    <a href="cardapio.html">Cardapio</a>
+                    <a href="nossaHistoria.html">Nossa História</a>
+                    <a href="localizacao.html">Localização</a>
+                </div>
+                <!--Redes sociais-->
+                <div class="footer-redes">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
